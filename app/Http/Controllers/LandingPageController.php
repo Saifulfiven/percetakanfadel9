@@ -33,7 +33,7 @@ class LandingPageController extends Controller
         $produkfavorit = Produks::where('favorit', 'mantap')
                                 ->where('statusaktif', 'aktif')
                                 ->get();
-        return view('Landingpage.index', compact( 'berita','header','produk','kategori','produkfavorit'));
+        return view('landingpage.index', compact( 'berita','header','produk','kategori','produkfavorit'));
     }
 
     public function detailproduk($slug)
