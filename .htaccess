@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://fadelprint.com/$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^https://fadelprint.com/$
+RewriteCond %{REQUEST_URI} !fadq1525/public/
+RewriteRule (.*) /fadq1525/public/$1 [L]
