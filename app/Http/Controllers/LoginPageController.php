@@ -28,7 +28,7 @@ class LoginPageController extends Controller
         return view('login.signin', compact('judulconten','header'));
     }
 
-   
+   //Saiful
 
     // public function actionlogin(Request $request)
     // {
